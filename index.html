@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Organic</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container-fluid  fixed-top top-0 bg-white">
+            <nav class=" container navbar navbar-expand-lg bg-body-white  ">
+                <div class="container" style="width: 75%;">
+                    <a class="navbar-brand" href="#">
+                        <h1><span style="color: #85F910;" class="border-0">O</span>rigin</h1>
+                    </a>
+                    <ul class="navbar-nav me-end mb-2 mb-lg-0 ms-end d-none ">
+                        <li>
+                            <a class="nav-link" href="#"><i class="fa-regular fa-heart text-black"><span
+                                        class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                        style="background-color: #85F910;">
+                                        9
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span></i></a>
+                        </li>
+                        <li>
+
+                            <a class="nav-link" href="#"><i class="fa-solid fa-shop"></i><span
+                                    class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                    style="background-color: #85F910;">
+                                    9
+                                    <span class="visually-hidden">unread messages</span>
+                                </span></a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold active " href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./shop.html">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./about.html">ABOUT US</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="blog.html">BLOG</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./contactUs.html">CONTACT US</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex ">
+                            <ul class="navbar-nav me-end mb-2 mb-lg-0 ms-end ">
+                                <li>
+
+                                    <a class="nav-link" href="#"><i class="fa-regular fa-heart text-black"><span
+                                                class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                                style="background-color: #85F910;">
+                                                9
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span></i></a>
+                                </li>
+                                <li>
+
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-shop"></i><span
+                                            class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                            style="background-color: #85F910;">
+                                            9
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row container mx-auto  py-2">
+                <div class="d-flex flex-wrap col-lg-12  col-md-9 col-sm-4">
+                    <div class="dropdown col-lg-6 col-md-6 col-sm-4">
+                        <button class="btn  text-white dropdown-toggle" style="background-color: #85F910;" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ALL CATEGORIES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Shop</a></li>
+                            <li><a class="dropdown-item" href="#">Stories</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-4 ">
+                        <form action="">
+                            <div class="input-group mb-6">
+                                <input type="text" class="form-control" required placeholder="What you want?">
+                                <button class="input-group-text  text-white" style="background-color: #85F910;"
+                                    id="basic-addon2">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="mt-5">
+        <div class="container-fluid  sm-mt-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class=" cauro d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class="add2 position-absolute align-self-center mx-sm-5">
+                                <h1 class="green fw-semi-bold fs-6" data-aos="fade-right" style="color: #85F910;">FRUIT
+                                    FRESH</h1>
+                                <p class="add fw-bolder   ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class=" cauro d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class="add2 position-absolute align-self-center mx-sm-5">
+                                <h1 class="green fw-semi-bold fs-6" data-aos="fade-right" style="color: #85F910;">FRUIT
+                                    FRESH</h1>
+                                <p class="add fw-bolder  me-auto ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class=" cauro d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class="add2 position-absolute align-self-center mx-sm-5">
+                                <h1 class="green fw-semi-bold fs-6" data-aos="fade-right" style="color: #85F910;">FRUIT
+                                    FRESH</h1>
+                                <p class="add fw-bolder  me-auto ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon mt-5"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon  mt-5"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 8%;margin-bottom: 8%;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="">
+                        <div class="-body">
+                            <img src="./icon/clock.png" alt="" class="mx-auto " width="40px" height="40px">
+                            <p class="mt-3 fw-bold fs-6">FREE SHIPPONG</p>
+                            <p>For All Order Over 99$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="">
+                        <div class="-body">
+                            <img src="./icon/location.png" alt="" class="mx-auto " width="40px" height="40px">
+                            <p class="mt-3 fw-bold fs-6">FIND YOUR DISTINATION</p>
+                            <p>Search Near Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="">
+                        <div class="-body">
+                            <img src="./icon/truck.png" alt="" class="mx-auto " width="40px" height="40px">
+                            <p class="mt-3 fw-bold fs-6">DELIVERY ON TIME</p>
+                            <p>If Good Have Problems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 8%;margin-bottom: 8%;">
+        <div class="container col-sm-mx-auto">
+            <div class="p-0 small row row-gap-2 d-flex justify-content-center col-sm-align-items-center ">
+                <h1 class="text-center mb-5">Today’s Special</h1>
+                <div class="col-lg-3 col-md-6 col-sm-4">
+                    <div class="card border-0 px-0 d-flex justify-content-center align-items-center ">
+                        <span class="badge   ms-auto text-center " style="background-color: #85F910;">NEW</span>
+                        <img src="https://i.pinimg.com/564x/e5/6d/83/e56d83b475aec8051dc05eeb512571f0.jpg"
+                            class="card-img-top w-50 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title ">Fruit fresh</h3>
+                            <p class="card-text text-success">8 Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4">
+                    <div class="card border-0">
+                        <span class="badge ms-auto text-center " style="background-color: #85F910;">NEW</span>
+                        <img src="./img/dena.png" class="card-img-top w-50 h-50 mx-auto  p-4" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Dena drink</h3>
+                            <p class="card-text text-success">5 Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4">
+                    <div class="card border-0 d-flex justify-content-center">
+                        <span class="badge  ms-auto text-center " style="background-color: #85F910;">NEW</span>
+                        <img src="./img/vegetables.png" class="card-img-top w-75 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Vegitables</h3>
+                            <p class="card-text text-success">Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4">
+                    <div class="card border-0" style="width: 18rem;">
+                        <span class="badge  ms-auto text-center " style="background-color: #85F910;">NEW</span>
+                        <img src="./img/drinksreal.png" class="card-img-top w-75 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Drinks</h3>
+                            <p class="card-text text-success">Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section style="margin-top: 8%;margin-bottom: 8%;">
+        <style>
+            .ul a {
+                background-color: none !important;
+                color: black !important;
+                font-size: 20px !important;
+                /* font-weight: 500; */
+            }
+
+            .container ul li .nav-link {
+                background-color: transparent !important;
+                /* Override the active background color */
+                /* color: #000!important; */
+                border: none !important;
+                /* Remove the active border */
+                cursor: pointer;
+            }
+
+            .nav-link {
+                color: black;
+            }
+
+            .nav-link.active {
+                color: #85F910 !important;
+                text-decoration-line: underline !important;
+            }
+        </style>
+
+
+        <h1 class="text-center mb-5 mt-5"> Featured Product</h1>
+        <section>
+            <div class="container">
+                <ul class="nav nav-pills mb-3 d-flex gap-5 justify-content-center mb-5 mt-5" id="pills-tab"
+                    role="tablist">
+                    <li class="link nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-target="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true" type="">All</a>
+                    </li>
+                    <li class="link nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                            role="tab" aria-controls="pills-profile" aria-selected="false" type="">Fruits</a>
+                    </li>
+                    <li class="link nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                            role="tab" aria-controls="pills-contact" aria-selected="false" type="">Vegitables</a>
+                    </li>
+                    <li class="link nav-item">
+                        <a class="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks"
+                            role="tab" aria-controls="pills-drinks" aria-selected="false" type="">Drinks</a>
+                    </li>
+                    <li class="link nav-item">
+                        <a class="nav-link" id="pills-fastfood-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-fastfood" role="tab" aria-controls="pills-fastfood"
+                            aria-selected="false" type="">FastFood</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/564x/af/65/71/af65719b7e9e4c4701cc5f3586eba378.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Rita's Orange Juice</h3>
+                                <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/236x/4e/a4/a1/4ea4a1b16e84f8310a3319d7760606d3.jpg"
+                                    class="card-img-top w-50 h-50   rounded-5 " alt="..."><br><br>
+                                <h3 class="card-title ">Pastha</h3>
+                                <p class="card-text fs-5 ">₹130 <del class="fs-6">₹180</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/564x/cd/7e/33/cd7e331c127daea03982f6ad755fade1.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Vendors</h3>
+                                <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/pineapple.png" class=" w-50 h-50 mx-auto " alt="...">
+                                <h3 class="title">Pine Apple</h3>
+                                <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5 ">
+                                <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Cherry</h3>
+                                <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/42/2d/cc/422dcc2744c313ff8f5a0c1ed9ebeecb.jpg"
+                                    class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Cucumber</h3>
+                                <p class="text fs-5 ">₹100 <del class="fs-6">₹120</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/orange.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title">Orange</h3>
+                                <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/236x/d4/5a/5f/d45a5fceb1722fc525f9ee6c068e39be.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style="margin-top: 30px;" alt="...">
+                                <h3 class="card-title">Carrot</h3>
+                                <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- all end -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                                <img src="./img/strawberry.png" class="card-img-top w-50 h-50 mx-end  " alt="...">
+                                <h3 class="title ">Strawberry</h3>
+                                <p class="text fs-5 ">₹200 <del class="fs-6">₹220</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/mango.png" class="img-top w-50 h-50 mx-auto rounded-5 "
+                                    style="margin-top: 10px;" alt="...">
+                                <h3 class="title">Mango</h3>
+                                <p class="text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/blueberry.png" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Blue Berry</h3>
+                                <p class="text fs-5 ">₹150 <del class="fs-6">₹180</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/pineapple.png" class=" w-50 h-50 mx-auto " alt="...">
+                                <h3 class="title">Pine Apple</h3>
+                                <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Cherry</h3>
+                                <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/graphs.png" class="card-img-top w-75 h-75 mx-auto " alt="...">
+                                <h3 class="card-title">Graphs</h3>
+                                <p class="card-text fs-5 ">₹80 <del class="fs-6">₹120</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/orange.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title">Orange</h3>
+                                <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="./img/black berry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title">Black Berry</h3>
+                                <p class="card-text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fruits end -->
+
+                    <!-- vegitables -->
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                                <img src="https://i.pinimg.com/564x/cc/1e/0a/cc1e0a16dd9f249e1a101badb3a041a5.jpg"
+                                    class="card-img-top w-50 h-50 mx-end  " alt="...">
+                                <h3 class="title ">Corn</h3>
+                                <p class="text fs-5 ">₹60 <del class="fs-6">₹80</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/42/2d/cc/422dcc2744c313ff8f5a0c1ed9ebeecb.jpg"
+                                    class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Cucumber</h3>
+                                <p class="text fs-5 ">₹100 <del class="fs-6">₹120</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/92/85/c7/9285c71d09abbb1f1a71ab1da0dd78e8.jpg"
+                                    class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Pumpkin </h3>
+                                <p class="text fs-5 ">₹90 <del class="fs-6">₹120</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/236x/6b/9e/3b/6b9e3bcde668351dbb1a800c03a82567.jpg"
+                                    class=" w-50 h-50 mx-auto " alt="...">
+                                <h3 class="title">Cabbage</h3>
+                                <p class="text fs-5 ">₹90 <del class="fs-6">₹110</del></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/564x/cd/7e/33/cd7e331c127daea03982f6ad755fade1.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Vendors</h3>
+                                <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/ea/c5/55/eac555eb960e913ed4f7a137caa72983.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style="margin-top: 30px;" alt="..."> <br>
+                                <h3 class="card-title">Chayote Squash</h3>
+                                <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/236x/d4/5a/5f/d45a5fceb1722fc525f9ee6c068e39be.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style="margin-top: 30px;" alt="...">
+                                <h3 class="card-title">Carrot</h3>
+                                <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/d2/47/b1/d247b1fb0d6be6a163d1b00f168f3fbc.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style="margin-top: 30px;" alt="...">
+                                <h3 class="card-title">Broccoli</h3>
+                                <p class="card-text fs-5 ">₹130 <del class="fs-6">₹150</del></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- vegitables end -->
+
+                    <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center  ">
+                                <img src="https://i.pinimg.com/564x/70/8e/0e/708e0e224d6be0885da939d265103b26.jpg"
+                                    class="card-img-top w-50 h-50 rounded-5   " alt="...">
+                                <h3 class="title ">Avocoda Juice</h3>
+                                <p class="text fs-5 ">₹150 <del class="fs-6">₹220</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://img.freepik.com/free-photo/top-view-orange-juice-bottle_23-2148785347.jpg?ga=GA1.2.64353436.1667538898&semt=ais_user"
+                                    class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Orange Juice</h3>
+                                <p class="text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/3a/e1/62/3ae16255f702a85ce36964e8954b8be0.jpg"
+                                    class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                                <h3 class="title">Passion Fruit Juice</h3>
+                                <p class="text fs-5 ">₹150 <del class="fs-6">₹180</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/3d/36/fc/3d36fc9750ea2954bc42bcacb2c41055.jpg"
+                                    class=" w-50 h-50 mx-auto " alt="...">
+                                <h3 class="title">Pine Apple Juice</h3>
+                                <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/564x/af/65/71/af65719b7e9e4c4701cc5f3586eba378.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " alt="...">
+                                <h3 class="card-title ">Rita's Orange Juice</h3>
+                                <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/82/ab/7b/82ab7b66d07e6d4e6f224d1bf9f0d8ac.jpg"
+                                    class="card-img-top w-75  mx-auto " style="height: 50%; margin-top: 20px;"
+                                    alt="...">
+                                <h3 class="card-title">Cantaloupe juice</h3>
+                                <p class="card-text fs-5 ">₹80 <del class="fs-6">₹120</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/51/8b/1c/518b1cc64d6e03840d6649bb5c7c17d0.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style=" margin-top: 20px;" alt="...">
+                                <h3 class="card-title">Chestnut juice </h3>
+                                <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/4e/33/6c/4e336c3e7d95174a1e4f57e5883437a3.jpg"
+                                    class="card-img-top w-50 h-50 mx-auto " style="margin-top: 20px;" alt="...">
+                                <h3 class="card-title">Canned Cashow</h3>
+                                <p class="card-text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fastfood -->
+                    <div class="tab-pane fade" id="pills-fastfood" role="tabpanel" aria-labelledby="pills-fastfood-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                                <img src="https://i.pinimg.com/564x/01/bb/60/01bb603617ceead136e5453e40255fd4.jpg"
+                                    class="card-img-top w-50 h-50   " alt="...">
+                                <h3 class="title ">Sanwitch</h3>
+                                <p class="text fs-5 ">₹220 <del class="fs-6">₹230</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/c6/35/d5/c635d567aa3a6f30140ca6515098586e.jpg"
+                                    class="img-top w-50 h-50 rounded-5 " alt="...">
+                                <h3 class="title">Chicken Burger</h3>
+                                <p class="text fs-5 ">₹300 <del class="fs-6">₹350</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/236x/69/81/ce/6981cee28346158ac1fd5f5bd7159940.jpg"
+                                    class="img-top w-50 h-50 rounded-5 " alt="...">
+                                <h3 class="title">Finger Fries</h3>
+                                <p class="text fs-5 ">₹120 <del class="fs-6">₹180</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/bc/fa/b3/bcfab32417e16cea788993d2208a4de1.jpg"
+                                    class=" w-50 h-50 rounded-5 " alt="...">
+                                <h3 class="title">Chicken Momos</h3>
+                                <p class="text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                                <img src="https://i.pinimg.com/236x/4e/a4/a1/4ea4a1b16e84f8310a3319d7760606d3.jpg"
+                                    class="card-img-top w-50 h-50 mt-5  rounded-5 " alt="..."><br><br>
+                                <h3 class="card-title ">Pastha</h3>
+                                <p class="card-text fs-5 ">₹130 <del class="fs-6">₹180</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/c5/2d/45/c52d454bf256841ea8934cd3d760d7b1.jpg"
+                                    class="card-img-top w-50 h-50  rounded-5 " style="margin-top: 80px;"
+                                    alt="..."><br><br>
+                                <h3 class="card-title">White Pastha</h3>
+                                <p class="card-text fs-5 ">₹180 <del class="fs-6">₹200</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/a2/8f/95/a28f95152408b7d0822db7394e80864b.jpg"
+                                    class="card-img-top w-75 h-50  " style="margin-top: 80px;" alt="...">
+                                <h3 class="card-title">Chilli Pizza</h3>
+                                <p class="card-text fs-5 ">₹220 <del class="fs-6">₹300</del></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                                <img src="https://i.pinimg.com/564x/b9/1c/ec/b91cec2883d30c0c2171ba2b75d63131.jpg"
+                                    class="card-img-top w-75 h-50    " style="margin-top: 80px;" alt="...">
+                                <h3 class="card-title">Cheese Pizza</h3>
+                                <p class="card-text fs-5 ">₹590 <del class="fs-6">₹650</del></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section style="margin-top: 8%;margin-bottom: 8%;">
+        <div class="container-fluid d-flex align-self-center">
+            <div class="row ">
+                <div class="col-md-4">
+                    <img src="./img/1st.png" class="w-100 h-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/2nd.png" class="w-100 h-100" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/3rd.png" class="w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 mb-5">
+        <h1 class="text-center ">Deal Of The Week</h1>
+        <div class="container ">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-9 col-sm-4 "><br><br><br><br><br>
+                    <div class="row">
+                        <div class="col-9">
+                            <h3 class="text-end fs-4">Eat Healthier</h3>
+                            <p class="text-end">Its fully organic fruits and vegetables.
+                                so eat everyday healthy foods</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="./icon/favicon.png" width="20px" height="20px">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-9">
+                            <h3 class="text-end fs-4">We Have Brands</h3>
+                            <p class="text-end">Its fully organic fruits and vegetables.
+                                so eat everyday healthy foods</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="./icon/web.png" width="20px" height="20px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6  col-md-9 col-sm-4 ">
+                    <div class="row d-flex justify-content-end position-relative">
+                        <img src="./img/deal week.png" alt="" class="w-75 h-75 mx-5 position-relative">
+                        <div class="rating card col-3  position-absolute text-center   "
+                            style="border-radius: 100%; width: 150px; top: 70%; right: 60px;  padding:5px 10px; box-shadow: 0px 0px 5px rgb(177, 174, 174); ">
+                            <div class="card-body  justify-content-sm-start align-item-lg-center">
+                                <h3 class="" style="color: #85F910;">ONLY</h3>
+                                <h1 class="" style="color: #85F910;">₹190 </h1>
+                            </div>
+                        </div>
+                    </div> <br><br><br><br>
+                    <div class="row column-gap-3 justify-content-center">
+                        <div class="col-2 text-center "
+                            style="border-radius: 20px;  padding:5px 10px; box-shadow: 0px 0px 5px rgb(177, 174, 174); ">
+                            <h1 class=" fs-2 " style="color: #85F910;">04</h1>
+                            <p class="text-black fs-6">DAYS</p>
+                        </div>
+                        <div class="col-2 text-center "
+                            style="border-radius: 20px; padding:5px 10px; box-shadow: 0px 0px 5px rgb(177, 174, 174); ">
+                            <h1 class=" fs-2 " style="color: #85F910;">14</h1>
+                            <p class="text-black fs-6">HRS</p>
+                        </div>
+                        <div class="col-2 text-center "
+                            style="border-radius: 20px; padding:5px 10px; box-shadow: 0px 0px 5px rgb(177, 174, 174); ">
+                            <h1 class=" fs-2 " style="color: #85F910;">60</h1>
+                            <p class="text-black fs-6">MIN</p>
+                        </div>
+                        <div class="col-2 text-center "
+                            style="border-radius: 20px; padding:5px 10px; box-shadow: 0px 0px 5px rgb(177, 174, 174); ">
+                            <h1 class=" fs-2 " style="color: #85F910;">55</h1>
+                            <p class="text-black fs-6">SEC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-9 col-sm-4"><br><br><br><br><br>
+                    <div class="row col-md-w-100">
+                        <div class="col-3">
+                            <img src="./icon/fresh.png" width="20px" height="20px">
+                        </div>
+                        <div class="col-9">
+                            <h3 class="text-start fs-4">Fresh And Hygiene</h3>
+                            <p class="text-start">Its fully organic fruits and vegetables.
+                                so eat everyday healthy foods</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3">
+                            <img src="./icon/modern.png" width="20px" height="20px">
+                        </div>
+                        <div class="col-9">
+                            <h3 class="text-start fs-4">Modern Process</h3>
+                            <p class="text-start">Its fully organic fruits and vegetables.
+                                so eat everyday healthy foods</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="mt-5 pt-5">
+        <div class="container bg-body-tertiary text-center">
+            <div class="row d-flex justify-content-center align-items-center column-gap-4 row-gap-4">
+                <div class="col-lg-2 col-md-3 col-sm-2"><img src="./img/natural3.png" alt="" class="w-50 h-50"></div>
+                <div class="col-lg-2 col-md-3 col-sm-2"><img src="./img/vegan.png" alt="" class="w-50 h-50"></div>
+                <div class="col-lg-2 col-md-3 col-sm-2"><img src="./img/leaf.png" alt="" class="w-50 h-50"></div>
+                <div class="col-lg-2 col-md-3 col-sm-2"><img src="./img/natural.png" alt="" class="w-50 h-50"></div>
+                <div class="col-lg-2 col-md-3 col-sm-2"><img src="./img/natural3.png" alt="" class="w-50 h-50"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 mb-5" style="background-color: #89C74A;">
+        <div class="container w-100 h-100 col-md-4">
+            <div class="row pt-5 pb-5 d-flex justify-content-center align-items-center col-md-flex-wrap">
+                <div class="col-lg-6 col-md-4 col-sm-4 justify-content-end col-md-w-50">
+                    <h3 class="text-white">JOIN US</h3>
+                    <p class="text-white">Get E-Mail updates about our latest shop and special offers</p>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-4 col-md-w-50">
+                    <form action="">
+                        <div class="input-group mb-3  ">
+                            <input type="text" class="form-control border-0 rounded-5 rounded-end-0 text-white  w-25 px-5"
+                                placeholder=" Enter your mail Id" required style="background-color: #A9E76B;">
+                            <div class="input-group-append">
+                                <button class="input-group-text bg-white rounded-5 px-4 rounded-start-0 "
+                                    id="basic-addon2"
+                                    style="color: #85F910; cursor: pointer; left: 90%;">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="footer container  ">
+            <div class="row gap-5 d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-4">
+                    <a class="navbar-brand" href="#">
+                        <h1><span style="color: #85F910;" class="border-0">O</span>rigin</h1>
+                    </a><br>
+                    <p class="text-black">Address: 20/25 KK Nagar,Saligramam,
+                        <br>chennai.
+                    </p>
+                    <p class="text-black">Mobile: +91 875455 65423</p>
+                    <p class="text-black">Email:originproducts@gmail.com</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fa-brands fa-facebook-f text-white fs-3 p-2 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-instagram text-white fs-3 p-2 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-twitter text-white fs-3 p-2 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-linkedin-in text-white fs-3 p-2 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h4>INFORMATION</h4><br>
+                    <p>About Us</p>
+                    <p>Checkout</p>
+                    <p>Contact</p>
+                    <p>Service</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <h4>MY ACCOUNT</h4><br>
+                    <p>My Account</p>
+                    <p>Contact</p>
+                    <p>Shopping Cart</p>
+                    <p>Shop</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h4>QUICKSHOP</h4><br>
+                    <p>Shipping & Returns</p>
+                    <p>Contact</p>
+                    <p>secured Shipping</p>
+                    <p>Fast Delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <hr>
+        <p class="fs-6 text-center">Copy Rights &#169; <span style="color: #85F910;" class="border-0">O</span>rigin 2023
+            All Rights Reserved. </p>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

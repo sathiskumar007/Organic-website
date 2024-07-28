@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- <section>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center ">Today’s Special</h1>
+                <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                    <div class="card " style="width: 18rem;">
+                        <span class="badge text-bg-success  ms-auto text-center ">NEW</span>
+                        <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title ">Fruit fresh</h3>
+                            <p class="card-text text-success">8 Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                    <div class="card " style="width: 18rem;">
+                        <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                        <img src="./img/dena.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Dena drink</h3>
+                            <p class="card-text text-success">5 Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                        <img src="./img/vegetables.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Vegitables</h3>
+                            <p class="card-text text-success">Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                    <div class="card " style="width: 18rem;">
+                        <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                        <img src="./img/drinksreal.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Drinks</h3>
+                            <p class="card-text text-success">Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <div class="container">
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
+                <span class="badge text-bg-success  ms-auto text-center ">NEW</span>
+                <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="card-title ">Fruit fresh</h3>
+                    <p class="card-text text-success">8 Available</p>
+                </div>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
+                <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                <img src="./img/dena.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Dena drink</h3>
+                    <p class="card-text text-success">5 Available</p>
+                </div>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
+                <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                <img src="./img/vegetables.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Vegitables</h3>
+                    <p class="card-text text-success">Available</p>
+                </div>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
+                <span class="badge text-bg-success ms-auto text-center ">NEW</span>
+                <img src="./img/drinksreal.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Drinks</h3>
+                    <p class="card-text text-success">Available</p>
+                </div>
+            </div>
+          </div>
+    </div>
+</div> -->
+
+
+<style>
+    .container ul li a{
+        background-color: none!important;
+        color: black;
+        font-size: 25px!important;
+        font-weight: 500;
+    }
+    .container ul li .nav-link {
+        background-color: transparent!important; /* Override the active background color */
+        /* color: #000!important; */
+        border: none!important; /* Remove the active border */
+        cursor: pointer;
+    }
+    .nav-link.active{
+        color: #85F910!important;
+        text-decoration-line: underline!important ;
+    }
+
+</style>
+
+    <section>
+        <div class="container">
+            <ul class="nav nav-pills mb-3 d-flex gap-5 justify-content-center mb-5 mt-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" 
+                        data-bs-target="#pills-home"  role="tab" aria-controls="pills-home"
+                        aria-selected="true" type="">All</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"  role="tab" aria-controls="pills-profile"
+                        aria-selected="false" type="">Fruits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"  role="tab" aria-controls="pills-contact"
+                        aria-selected="false" type="">Vegitables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks"
+                         role="tab" aria-controls="pills-drinks" aria-selected="false" type="">Drinks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-fastfood-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-fastfood"  role="tab" aria-controls="pills-fastfood"
+                        aria-selected="false" type="">FastFood</a>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/564x/af/65/71/af65719b7e9e4c4701cc5f3586eba378.jpg" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Rita's Orange Juice</h3>
+                            <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/236x/4e/a4/a1/4ea4a1b16e84f8310a3319d7760606d3.jpg" class="card-img-top w-50 h-50   rounded-5 " alt="..."><br><br>
+                            <h3 class="card-title ">Pastha</h3>
+                            <p class="card-text fs-5 ">₹130 <del class="fs-6">₹180</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/564x/cd/7e/33/cd7e331c127daea03982f6ad755fade1.jpg" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Vendors</h3>
+                            <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/pineapple.png" class=" w-50 h-50 mx-auto " alt="...">
+                            <h3 class="title">Pine Apple</h3>
+                            <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5 ">
+                            <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Cherry</h3>
+                            <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/42/2d/cc/422dcc2744c313ff8f5a0c1ed9ebeecb.jpg" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Cucumber</h3>
+                            <p class="text fs-5 ">₹100 <del class="fs-6">₹120</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/orange.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title">Orange</h3>
+                            <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/236x/d4/5a/5f/d45a5fceb1722fc525f9ee6c068e39be.jpg" class="card-img-top w-50 h-50 mx-auto "  style="margin-top: 30px;" alt="...">
+                            <h3 class="card-title">Carrot</h3>
+                            <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- all end -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                            <img src="./img/strawberry.png" class="card-img-top w-50 h-50 mx-end  " alt="...">
+                            <h3 class="title ">Strawberry</h3>
+                            <p class="text fs-5 ">₹200 <del class="fs-6">₹220</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/mango.png" class="img-top w-50 h-50 mx-auto rounded-5 " style="margin-top: 10px;" alt="...">
+                            <h3 class="title">Mango</h3>
+                            <p class="text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/blueberry.png" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Blue Berry</h3>
+                            <p class="text fs-5 ">₹150 <del class="fs-6">₹180</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/pineapple.png" class=" w-50 h-50 mx-auto " alt="...">
+                            <h3 class="title">Pine Apple</h3>
+                            <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="./img/cherry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Cherry</h3>
+                            <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/graphs.png" class="card-img-top w-75 h-75 mx-auto " alt="...">
+                            <h3 class="card-title">Graphs</h3>
+                            <p class="card-text fs-5 ">₹80 <del class="fs-6">₹120</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/orange.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title">Orange</h3>
+                            <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="./img/black berry.png" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title">Black Berry</h3>
+                            <p class="card-text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fruits end -->
+
+                <!-- vegitables -->
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                            <img src="https://i.pinimg.com/564x/cc/1e/0a/cc1e0a16dd9f249e1a101badb3a041a5.jpg" class="card-img-top w-50 h-50 mx-end  " alt="...">
+                            <h3 class="title ">Corn</h3>
+                            <p class="text fs-5 ">₹60 <del class="fs-6">₹80</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/42/2d/cc/422dcc2744c313ff8f5a0c1ed9ebeecb.jpg" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Cucumber</h3>
+                            <p class="text fs-5 ">₹100 <del class="fs-6">₹120</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/92/85/c7/9285c71d09abbb1f1a71ab1da0dd78e8.jpg" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Pumpkin </h3>
+                            <p class="text fs-5 ">₹90 <del class="fs-6">₹120</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/236x/6b/9e/3b/6b9e3bcde668351dbb1a800c03a82567.jpg" class=" w-50 h-50 mx-auto " alt="...">
+                            <h3 class="title">Cabbage</h3>
+                            <p class="text fs-5 ">₹90 <del class="fs-6">₹110</del></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/564x/cd/7e/33/cd7e331c127daea03982f6ad755fade1.jpg" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Vendors</h3>
+                            <p class="card-text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/ea/c5/55/eac555eb960e913ed4f7a137caa72983.jpg" class="card-img-top w-50 h-50 mx-auto " style="margin-top: 30px;" alt="..."> <br>
+                            <h3 class="card-title">Chayote Squash</h3>
+                            <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/236x/d4/5a/5f/d45a5fceb1722fc525f9ee6c068e39be.jpg" class="card-img-top w-50 h-50 mx-auto "  style="margin-top: 30px;" alt="...">
+                            <h3 class="card-title">Carrot</h3>
+                            <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/d2/47/b1/d247b1fb0d6be6a163d1b00f168f3fbc.jpg" class="card-img-top w-50 h-50 mx-auto "  style="margin-top: 30px;" alt="...">
+                            <h3 class="card-title">Broccoli</h3>
+                            <p class="card-text fs-5 ">₹130 <del class="fs-6">₹150</del></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- vegitables end -->
+
+                <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center  ">
+                            <img src="https://i.pinimg.com/564x/70/8e/0e/708e0e224d6be0885da939d265103b26.jpg" class="card-img-top w-50 h-50 rounded-5   " alt="...">
+                            <h3 class="title ">Avocoda Juice</h3>
+                            <p class="text fs-5 ">₹150 <del class="fs-6">₹220</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://img.freepik.com/free-photo/top-view-orange-juice-bottle_23-2148785347.jpg?ga=GA1.2.64353436.1667538898&semt=ais_user" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Orange Juice</h3>
+                            <p class="text fs-5 ">₹100 <del class="fs-6">₹150</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/3a/e1/62/3ae16255f702a85ce36964e8954b8be0.jpg" class="img-top w-50 h-50 mx-auto rounded-5 " alt="...">
+                            <h3 class="title">Passion Fruit Juice</h3>
+                            <p class="text fs-5 ">₹150 <del class="fs-6">₹180</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/3d/36/fc/3d36fc9750ea2954bc42bcacb2c41055.jpg" class=" w-50 h-50 mx-auto " alt="...">
+                            <h3 class="title">Pine Apple Juice</h3>
+                            <p class="text fs-5 ">₹90 <del class="fs-6">₹150</del></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/564x/af/65/71/af65719b7e9e4c4701cc5f3586eba378.jpg" class="card-img-top w-50 h-50 mx-auto " alt="...">
+                            <h3 class="card-title ">Rita's Orange Juice</h3>
+                            <p class="card-text fs-5 ">₹80 <del class="fs-6">₹100</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/82/ab/7b/82ab7b66d07e6d4e6f224d1bf9f0d8ac.jpg" class="card-img-top w-75  mx-auto " style="height: 50%; margin-top: 20px;" alt="...">
+                            <h3 class="card-title">Cantaloupe juice</h3>
+                            <p class="card-text fs-5 ">₹80 <del class="fs-6">₹120</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/51/8b/1c/518b1cc64d6e03840d6649bb5c7c17d0.jpg" class="card-img-top w-50 h-50 mx-auto " style=" margin-top: 20px;" alt="...">
+                            <h3 class="card-title">Chestnut juice </h3>
+                            <p class="card-text fs-5 ">₹120 <del class="fs-6">₹200</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/4e/33/6c/4e336c3e7d95174a1e4f57e5883437a3.jpg" class="card-img-top w-50 h-50 mx-auto " style="margin-top: 20px;" alt="...">
+                            <h3 class="card-title">Canned Cashow</h3>
+                            <p class="card-text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fastfood -->
+                <div class="tab-pane fade" id="pills-fastfood" role="tabpanel" aria-labelledby="pills-fastfood-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center ">
+                            <img src="https://i.pinimg.com/564x/01/bb/60/01bb603617ceead136e5453e40255fd4.jpg" class="card-img-top w-50 h-50   " alt="...">
+                            <h3 class="title ">Sanwitch</h3>
+                            <p class="text fs-5 ">₹220 <del class="fs-6">₹230</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/c6/35/d5/c635d567aa3a6f30140ca6515098586e.jpg" class="img-top w-50 h-50 rounded-5 "   alt="...">
+                            <h3 class="title">Chicken Burger</h3>
+                            <p class="text fs-5 ">₹300 <del class="fs-6">₹350</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/236x/69/81/ce/6981cee28346158ac1fd5f5bd7159940.jpg" class="img-top w-50 h-50 rounded-5 " alt="...">
+                            <h3 class="title">Finger Fries</h3>
+                            <p class="text fs-5 ">₹120 <del class="fs-6">₹180</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/bc/fa/b3/bcfab32417e16cea788993d2208a4de1.jpg" class=" w-50 h-50 rounded-5 " alt="...">
+                            <h3 class="title">Chicken Momos</h3>
+                            <p class="text fs-5 ">₹190 <del class="fs-6">₹250</del></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center mt-5">
+                            <img src="https://i.pinimg.com/236x/4e/a4/a1/4ea4a1b16e84f8310a3319d7760606d3.jpg" class="card-img-top w-50 h-50 mt-5  rounded-5 " alt="..."><br><br>
+                            <h3 class="card-title ">Pastha</h3>
+                            <p class="card-text fs-5 ">₹130 <del class="fs-6">₹180</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/c5/2d/45/c52d454bf256841ea8934cd3d760d7b1.jpg" class="card-img-top w-50 h-50  rounded-5 " style="margin-top: 80px;" alt="..."><br><br>
+                            <h3 class="card-title">White Pastha</h3>
+                            <p class="card-text fs-5 ">₹180 <del class="fs-6">₹200</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/a2/8f/95/a28f95152408b7d0822db7394e80864b.jpg" class="card-img-top w-75 h-50  " style="margin-top: 80px;" alt="...">
+                            <h3 class="card-title">Chilli Pizza</h3>
+                            <p class="card-text fs-5 ">₹220 <del class="fs-6">₹300</del></p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-4 mb-3 text-center">
+                            <img src="https://i.pinimg.com/564x/b9/1c/ec/b91cec2883d30c0c2171ba2b75d63131.jpg" class="card-img-top w-75 h-50    " style="margin-top: 80px;" alt="...">
+                            <h3 class="card-title">Cheese Pizza</h3>
+                            <p class="card-text fs-5 ">₹590 <del class="fs-6">₹650</del></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

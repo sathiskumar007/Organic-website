@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BLog Page</title>
+    <style>
+        .nav-link.active {
+            color: #85F910 !important;
+            text-decoration-line: underline !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid  fixed-top top-0 bg-white">
+            <nav class="container navbar navbar-expand-lg bg-body-white ">
+                <div class="container" style="width: 75%;">
+                    <a class="navbar-brand" href="#">
+                        <h1><span style="color: #85F910;" class="border-0">O</span>rigin</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold  " href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./shop.html">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./about.html">ABOUT US</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link fw-semi-bold active" href="#">BLOG</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link fw-semi-bold" href="./contactUs.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0 ms-end">
+                            <li>
+                                <a class="nav-link" href="#"><i class="fa-regular fa-heart text-black"><span
+                                            class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                            style="background-color: #85F910;">
+                                            9
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span></i></a>
+                            </li>
+                            <li>
+
+                                <a class="nav-link" href="#"><i class="fa-solid fa-shop"></i><span
+                                        class="position-absolute top-25 start-75 translate-middle badge rounded-pill "
+                                        style="background-color: #85F910;">
+                                        9
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row container mx-auto  py-2">
+                <div class="d-flex col-lg-12 ">
+                    <div class="dropdown col-lg-6 col-md-6 col-sm-4 order-sm-0  ">
+                        <button class="btn  text-white dropdown-toggle" style="background-color: #85F910;" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ALL CATEGORIES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Shop</a></li>
+                            <li><a class="dropdown-item" href="#">Stories</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-4 order order-sm-1">
+                        <form action="">
+                            <div class="input-group mb-6">
+                                <input type="text" class="form-control" required placeholder="What you want?">
+                                <button class="input-group-text  text-white" style="background-color: #85F910;"
+                                    id="basic-addon2">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+    <section class="mt-5">
+        <div class="container-fluid  sm-mt-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class=" d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class=" position-absolute align-self-center" style="margin-left: 100px; ">
+                                <h1 class="green fw-semi-bold fs-6" style="color: #85F910;">FRUIT FRESH</h1>
+                                <p class="add fw-bolder  me-auto ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class=" d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class=" position-absolute align-self-center" style="margin-left: 100px; ">
+                                <h1 class="green fw-semi-bold fs-6" style="color: #85F910;">FRUIT FRESH</h1>
+                                <p class="add fw-bolder  me-auto ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class=" d-flex">
+                            <div class="img position-relative">
+                                <img src="./img/banner img.png" class="w-100 h-100">
+                            </div>
+                            <div class=" position-absolute align-self-center" style="margin-left: 100px; ">
+                                <h1 class="green fw-semi-bold fs-6" style="color: #85F910;">FRUIT FRESH</h1>
+                                <p class="add fw-bolder  me-auto ">Fresh Fruit & <br>Vegetables</p>
+                                <a href=""> <button class="button btn text-white ms-auto sm-mx-start"
+                                        style="background-color: #85F910;">Show More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="row gap-4">
+                <div class="col-lg-5 col-md-5 col-sm-4">
+                    <a class="navbar-brand" href="#">
+                        <h1><span style="color: #85F910;" class="border-0">O</span>rigin</h1>
+                    </a>
+                    <p class="text-black">Address: 20/25 KK Nagar,Saligramam,
+                        <br>chennai.
+                    </p>
+                    <p class="text-black">Mobile: +91 875455 65423</p>
+                    <p class="text-black">Email:originproducts@gmail.com</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fa-brands fa-facebook-f text-white fs-3 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-instagram text-white fs-3 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-twitter text-white fs-3 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-linkedin-in text-white fs-3 "
+                                style="box-shadow: 10px 10px px solid black; padding: 10px; background-color: #85F910; border-radius: 30px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h4>INFORMATION</h4>
+                    <p>About Us</p>
+                    <p>Checkout</p>
+                    <p>Contact</p>
+                    <p>Service</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h4>MY ACCOUNT</h4>
+                    <p>My Account</p>
+                    <p>Contact</p>
+                    <p>Shopping Cart</p>
+                    <p>Shop</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <h4>QUICKSHOP</h4>
+                    <p>Shipping & Returns</p>
+                    <p>Contact</p>
+                    <p>secured Shipping</p>
+                    <p>Fast Delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <hr>
+        <p class="fs-6 text-center">Copy Rights &#169; <span style="color: #85F910;" class="border-0">O</span>rigin 2023
+            All Rights Reserved. </p>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
